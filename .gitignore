@@ -27,6 +27,8 @@ db.sql
 Thumbs.db
 Desktop.ini
 venv
+# Hack, needs to be fixed on Glean.js so that this is not created.
+.venv
 *.db
 *.mmdb
 bedrock_db_info.json

@@ -7,6 +7,7 @@
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
     "@mozilla-protocol/core": "16.0.0",
+    "@mozilla/glean": "^0.25.0",
     "@sentry/browser": "^6.12.0",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
@@ -63,7 +64,8 @@
     "prewatch": "npm run static",
     "watch": "webpack --mode=development --watch",
     "prettier": "prettier --write .",
-    "prettier-check": "prettier --check ."
+    "prettier-check": "prettier --check .",
+    "glean": "glean translate media/js/glean/metrics.yaml media/js/glean/pings.yaml -f javascript -o media/js/glean/generated"
   },
   "browserslist": [
     "defaults",

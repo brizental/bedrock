@@ -82,6 +82,10 @@
     {% block google_analytics %}
       {% include 'includes/google-analytics.html' %}
     {% endblock %}
+
+    {% block glean_client %}
+      {{ js_bundle('glean') }}
+    {% endblock %}
   </head>
 
   <body {% if self.body_id() %}id="{% block body_id %}{% endblock %}" {% endif %}class="html-{{ DIR }} {% block body_class %}{% endblock %}" {% block body_attrs %}{% endblock %}>

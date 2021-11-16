@@ -982,6 +982,14 @@
     },
     {
       "files": [
+        "js/glean/init.js",
+        "js/glean/generated/pings.js",
+        "js/glean/generated/page.js"
+      ],
+      "name": "glean"
+    },
+    {
+      "files": [
         "js/base/site.js",
         "js/base/dnt-helper.js",
         "js/base/mozilla-cookie-helper.js",
