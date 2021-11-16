@@ -1,1 +1,36 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+---
+$schema: moz://mozilla.org/schemas/glean/metrics/2-0-0
+
+page:
+  viewed:
+    type: datetime
+    lifetime: ping
+    send_in_pings:
+      - page-view
+    description: |
+      The time a page was viewed.
+    bugs:
+      - https://bugzilla.mozilla.org/TODO
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO#c0
+    notification_emails:
+      - bea@mozilla.com
+    expires: never
+  id:
+    type: string
+    lifetime: ping
+    send_in_pings:
+      - page-view
+    description: |
+      The ID of the page that was viewed.
+    bugs:
+      - https://bugzilla.mozilla.org/TODO
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO#c0
+    notification_emails:
+      - bea@mozilla.com
+    expires: never
